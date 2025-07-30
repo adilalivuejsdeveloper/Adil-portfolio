@@ -47,6 +47,7 @@
               to="/contact"
               class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition"
             >
+            
               Contact Me
             </router-link>
           </div>

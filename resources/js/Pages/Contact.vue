@@ -83,7 +83,6 @@ const handleSubmit = () => {
   // You can replace this with an API call using Axios
   console.log('Form submitted:', form.value);
 
-  // Clear form after submission (optional)
   form.value = {
     name: '',
     email: '',

@@ -4,6 +4,7 @@ import router from './router';
 import '../css/app.css';
 const app = createApp(App);
 
+
 import Slider from './Components/slider.vue';
 app.component('slider-component', Slider);
 

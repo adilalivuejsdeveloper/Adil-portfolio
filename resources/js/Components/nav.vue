@@ -120,7 +120,6 @@
   <!-- Spacer to prevent content from hiding behind fixed navbar -->
   <div class="h-16"></div>
 </template>
-
 <script>
 export default {
   name: 'NavigationComponent',

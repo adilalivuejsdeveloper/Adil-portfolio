@@ -2,7 +2,6 @@
                   <nav-component />
 
     <hr class="m-0">
-
    <section class="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
     <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col justify-center items-center text-center">
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">👋 Hi, I'm Adil Ali</h1>

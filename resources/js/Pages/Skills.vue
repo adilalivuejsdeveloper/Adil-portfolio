@@ -2,7 +2,6 @@
                   <nav-component />
 
     <hr class="m-0">
-
    <section class="min-h-screen bg-gray-50 py-12 px-6 lg:px-16">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-gray-800 mb-10 border-b-4 border-blue-600 inline-block pb-2">

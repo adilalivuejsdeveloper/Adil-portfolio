@@ -9,6 +9,7 @@
         Experience
       </h2>
 
+
       <div class="relative border-l-4 border-blue-600 pl-6 space-y-12">
         <div v-for="(exp, index) in experiences" :key="index" class="relative">
           <div class="absolute -left-3 top-1.5 bg-blue-600 w-6 h-6 rounded-full border-4 border-white shadow"></div>

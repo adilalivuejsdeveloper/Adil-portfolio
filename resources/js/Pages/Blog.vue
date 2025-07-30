@@ -30,8 +30,7 @@
       </div>
     </div>
   </section>
-</template>
-
+</template
 <script setup>
 const blogPosts = [
   {
