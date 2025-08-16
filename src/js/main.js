@@ -3,8 +3,8 @@ import App from './App.vue';
 import router from './router';
 import '../css/app.css';
 
-import Slider from './components/slider.vue';
-import Nav from './components/nav.vue';
+import Slider from './Components/slider.vue';
+import Nav from './Components/nav.vue';
 
 const app = createApp(App);
 
