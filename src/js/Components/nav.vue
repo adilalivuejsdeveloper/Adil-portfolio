@@ -8,10 +8,10 @@
           class="group flex items-center space-x-2"
         >
           <div class="flex size-10 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 transition-transform duration-200 group-hover:scale-105">
-            <span class="text-lg font-bold text-white">P</span>
+            <span class="text-lg font-bold text-white">AA</span>
           </div>
           <span class="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-xl font-bold text-transparent">
-            Portfolio
+            Adil Ali
           </span>
         </router-link>
 
