@@ -46,6 +46,8 @@
       </div>
     </div>
   </section>
+      <footer-component />
+
 </template>
 
 <script setup>
