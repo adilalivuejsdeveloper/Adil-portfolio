@@ -146,7 +146,7 @@ export default {
         { name: 'Projects', path: '/projects', icon: 'fas fa-code' },
         { name: 'Skills', path: '/skills', icon: 'fas fa-tools' },
         { name: 'Experience', path: '/experience', icon: 'fas fa-briefcase' },
-        { name: 'Blog', path: '/blog', icon: 'fas fa-pen-alt' },
+        // { name: 'Blog', path: '/blog', icon: 'fas fa-pen-alt' },
         { name: 'Contact', path: '/contact', icon: 'fas fa-envelope' }
       ]
     }
