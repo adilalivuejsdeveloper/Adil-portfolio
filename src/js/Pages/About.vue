@@ -21,7 +21,6 @@
                 alt="Adil Ali - Full Stack Web Developer"
                 class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl object-cover shadow-2xl border-4 border-white dark:border-gray-700 transition-transform duration-500 hover:scale-105"
               />
-
               <!-- Status Badge -->
               <div class="absolute -bottom-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
                 <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
