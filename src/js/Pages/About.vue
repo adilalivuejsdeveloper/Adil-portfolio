@@ -37,7 +37,7 @@
 
             <div class="absolute -bottom-8 -left-8 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
               <div class="text-2xl mb-2">💻</div>
-              <div class="text-sm font-semibold text-gray-800 dark:text-white">7+ Projects</div>
+              <div class="text-sm font-semibold text-gray-800 dark:text-white">9+ Projects</div>
               <div class="text-xs text-gray-500 dark:text-gray-400">Completed</div>
             </div>
 
@@ -82,7 +82,7 @@
               <div class="text-sm text-gray-500 dark:text-gray-400">Years Exp.</div>
             </div>
             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
-              <div class="text-2xl font-bold text-green-600">7+</div>
+              <div class="text-2xl font-bold text-green-600">9+</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">Projects</div>
             </div>
             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
