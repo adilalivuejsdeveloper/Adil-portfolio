@@ -8,7 +8,7 @@
         Blog & Insights
       </h2>
       <p class="text-gray-600 mb-10 max-w-3xl">
-        Sharing my experiences and insights from 2.1 years of full-stack web development. Learn about the technologies I use and the projects I've built.
+        Sharing my experiences and insights from 2.2 years of full-stack web development. Learn about the technologies I use and the projects I've built.
       </p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -114,7 +114,7 @@ const blogPosts = [
   },
   {
     title: 'From Freelance to Full-Time: My Web Development Journey',
-    excerpt: 'Sharing my 2.1-year journey from learning web development to working with international clients and developing complex web applications.',
+    excerpt: 'Sharing my 2.2-year journey from learning web development to working with international clients and developing complex web applications.',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
     slug: 'freelance-to-fulltime-web-development-journey',
     readTime: '12 min read',

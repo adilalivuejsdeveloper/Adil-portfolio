@@ -11,7 +11,7 @@
         Full Stack Web Developer
       </h2>
       <p class="max-w-4xl mb-8 text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed px-4">
-        I am a Full Stack Web Developer with 2.1 years of experience in web design and development. I specialize in creating dynamic and user-friendly websites using modern technologies such as HTML, Vue.js, CSS, Tailwind CSS, Bootstrap, JavaScript, and Alpine.js as well as backend technologies like PHP, Laravel and Livewire.
+        I am a Full Stack Web Developer with 2.2 years of experience in web design and development. I specialize in creating dynamic and user-friendly websites using modern technologies such as HTML, Vue.js, CSS, Tailwind CSS, Bootstrap, JavaScript, and Alpine.js as well as backend technologies like PHP, Laravel and Livewire.
       </p>
 
       <!-- Call to Action Buttons -->
@@ -183,7 +183,7 @@
       <div class="mt-8 sm:mt-12 w-full max-w-4xl">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 px-4">
           <div class="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm text-center">
-            <div class="text-2xl sm:text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">2.1+</div>
+            <div class="text-2xl sm:text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">2.2+</div>
             <div class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Years Experience</div>
           </div>
           <div class="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm text-center">

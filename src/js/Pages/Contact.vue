@@ -32,7 +32,7 @@
             Get In Touch
           </h2>
           <p class="text-gray-600 mb-8">
-            I'm a Full Stack Web Developer with 2.1 years of experience ready to help bring your web development projects to life. Let's discuss how I can help you build amazing web applications using modern technologies like Vue.js, Laravel, and Tailwind CSS.
+            I'm a Full Stack Web Developer with 2.2 years of experience ready to help bring your web development projects to life. Let's discuss how I can help you build amazing web applications using modern technologies like Vue.js, Laravel, and Tailwind CSS.
           </p>
 
           <!-- Contact Details -->

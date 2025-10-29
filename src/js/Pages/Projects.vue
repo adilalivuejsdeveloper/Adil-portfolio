@@ -43,7 +43,7 @@
           <div
             class="bg-white dark:bg-gray-800 rounded-xl px-4 sm:px-6 py-3 sm:py-4 shadow-md border border-gray-100 dark:border-gray-700"
           >
-            <div class="text-xl sm:text-2xl font-bold text-purple-600">2.1+</div>
+            <div class="text-xl sm:text-2xl font-bold text-purple-600">2.2+</div>
             <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
               Years Experience
             </div>

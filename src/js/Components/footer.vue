@@ -13,7 +13,7 @@
             <h3 class="text-2xl font-bold">Adil Ali</h3>
           </div>
           <p class="text-gray-300 mb-6 leading-relaxed">
-            Full Stack Web Developer with 2.1+ years of experience creating dynamic and user-friendly web applications.
+            Full Stack Web Developer with 2.2+ years of experience creating dynamic and user-friendly web applications.
             Specializing in Vue.js, Laravel, and modern web technologies to deliver scalable solutions.
           </p>
 
@@ -128,7 +128,7 @@
               <li>📍 Freelance Collaboration (2025 - Present)</li>
               <li>📍 Chirp Technologies (Apr 2025 - Jun 2025)</li>
               <li>📍 Intelliage Solutions (Aug 2023 - Mar 2025)</li>
-              <li class="text-indigo-400">2.1+ Years Experience</li>
+              <li class="text-indigo-400">2.2+ Years Experience</li>
             </ul>
           </div>
 

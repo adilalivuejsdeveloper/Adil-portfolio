@@ -31,7 +31,7 @@
             <!-- Floating Cards -->
             <div class="absolute -top-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div class="text-2xl mb-2">🚀</div>
-              <div class="text-sm font-semibold text-gray-800 dark:text-white">2.1+ Years</div>
+              <div class="text-sm font-semibold text-gray-800 dark:text-white">2.2+ Years</div>
               <div class="text-xs text-gray-500 dark:text-gray-400">Experience</div>
             </div>
 
@@ -68,7 +68,7 @@
           <!-- Description -->
           <div class="space-y-4">
             <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Passionate Full Stack Web Developer from <strong class="text-indigo-600 dark:text-indigo-400">Lahore, Pakistan</strong> with <strong class="text-indigo-600 dark:text-indigo-400">2.1 years of experience</strong> in creating dynamic, user-friendly web applications using cutting-edge technologies.
+              Passionate Full Stack Web Developer from <strong class="text-indigo-600 dark:text-indigo-400">Lahore, Pakistan</strong> with <strong class="text-indigo-600 dark:text-indigo-400">2.2 years of experience</strong> in creating dynamic, user-friendly web applications using cutting-edge technologies.
             </p>
             <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
               I specialize in building scalable web solutions with <strong>Vue.js, Laravel, Tailwind CSS</strong>, and modern development practices. My expertise spans both frontend and backend development, delivering complete digital solutions.
@@ -78,7 +78,7 @@
           <!-- Key Stats -->
           <div class="grid grid-cols-3 gap-4">
             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
-              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">2.1+</div>
+              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">2.2+</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">Years Exp.</div>
             </div>
             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">

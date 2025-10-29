@@ -10,7 +10,7 @@
           My Skills
         </h1>
         <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
-          With 2.1 years of experience in web development, I've mastered a comprehensive set of technologies for building modern, scalable web applications.
+          With 2.2 years of experience in web development, I've mastered a comprehensive set of technologies for building modern, scalable web applications.
         </p>
 
         <!-- Skills Overview Stats -->
@@ -28,7 +28,7 @@
             <div class="text-xs sm:text-sm text-gray-500">Databases</div>
           </div>
           <div class="bg-white rounded-xl p-3 sm:p-4 shadow-md border border-gray-100">
-            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-orange-600">2.1+</div>
+            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-orange-600">2.2+</div>
             <div class="text-xs sm:text-sm text-gray-500">Years Exp</div>
           </div>
         </div>

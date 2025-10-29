@@ -8,7 +8,7 @@
         Professional Experience
       </h2>
       <p class="text-gray-600 mb-10 max-w-3xl">
-        With 2.1 years of experience in web development, I have worked with various companies and collaborated on international projects, developing expertise in full-stack web development.
+        With 2.2 years of experience in web development, I have worked with various companies and collaborated on international projects, developing expertise in full-stack web development.
       </p>
 
       <div class="relative border-l-4 border-blue-600 pl-6 space-y-12">
