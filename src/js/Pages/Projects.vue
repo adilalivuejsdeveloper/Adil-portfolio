@@ -273,26 +273,26 @@ const projects = [
     code: "",
   },
   {
-  id: 3,
-  title: "Pakistan Cooling Center",
-  description:
-    "An e-commerce platform for air conditioning and cooling solutions, allowing customers to explore, compare, and purchase cooling products with a smooth and responsive shopping experience. Built for performance, simplicity, and user convenience.",
-  image: "/images/pakistancooling.webp",
-  tags: ["E-commerce", "Cooling Products", "Vue.js", "Laravel", "Tailwind CSS"],
-  live: "https://pakistancooling.com/",
-  code: "",
-},
+    id: 3,
+    title: "Pakistan Cooling Center",
+    description:
+      "An e-commerce platform for air conditioning and cooling solutions, allowing customers to explore, compare, and purchase cooling products with a smooth and responsive shopping experience. Built for performance, simplicity, and user convenience.",
+    image: "/images/pakistancooling.webp",
+    tags: ["E-commerce", "Cooling Products", "Vue.js", "Laravel", "Tailwind CSS"],
+    live: "https://pakistancooling.com/",
+    code: "",
+  },
 
-{
-  id: 4,
-  title: "MedexCore",
-  description:
-    "A healthcare management platform built to streamline patient data handling, appointment scheduling, and medical record management. It provides a secure and efficient system for clinics and healthcare professionals to manage operations digitally.",
-  image: "/images/MEDEXCORE.webp",
-  tags: ["Healthcare", "Management System", "Laravel", "Livewire", "Tailwind CSS"],
-  live: "https://medexcore.com/",
-  code: "",
-},
+  {
+    id: 4,
+    title: "MedexCore",
+    description:
+      "A healthcare management platform built to streamline patient data handling, appointment scheduling, and medical record management. It provides a secure and efficient system for clinics and healthcare professionals to manage operations digitally.",
+    image: "/images/MEDEXCORE.webp",
+    tags: ["Healthcare", "Management System", "Laravel", "Livewire", "Tailwind CSS"],
+    live: "https://medexcore.com/",
+    code: "",
+  },
 
   {
     id: 5,
@@ -304,9 +304,26 @@ const projects = [
     live: "https://holoin.ai/",
     code: "",
   },
-
   {
     id: 6,
+    title: "Adrimo Paris",
+    description:
+      "A French e-commerce brand specializing in beauty and skincare products. I optimized the Shopify store for better performance and user experience — improving page speed, mobile responsiveness, and code efficiency while maintaining the brand’s elegant look and feel.",
+    image: "/images/adrimo.webp",
+    tags: [
+      "Shopify",
+      "Performance Optimization",
+      "Frontend Development",
+      "JavaScript",
+      "Liquid",
+      "CSS",
+    ],
+    live: "https://adrimoparis.com/",
+    code: "",
+  },
+
+  {
+    id: 7,
     title: "SEO-Workforce",
     description:
       "A project for analyzing various aspects of websites. Developed all frontend and backend functionalities. Handled databases and server-side logic to analyze website metrics.",
@@ -316,7 +333,7 @@ const projects = [
     code: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "OD Talent",
     description:
       "A platform designed to connect and manage talent seamlessly. Developed a dynamic frontend solution with 5 custom pages. Created an interactive dashboard for talent management.",
@@ -327,7 +344,7 @@ const projects = [
     code: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "OdChat",
     description:
       "Development of a chatbot project. Developed a real-time, interactive chatbot solution similar to Tawk.to, enabling live customer support.",
@@ -338,7 +355,7 @@ const projects = [
     code: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Gulf Cars4u",
     description:
       "An online platform for buying and selling cars. Developed the front-end and integrated all backend functionalities through APIs. Connected databases and implemented server-side logic.",
