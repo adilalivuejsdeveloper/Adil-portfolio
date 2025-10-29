@@ -243,7 +243,7 @@ const skills = [
 const achievements = [
   {
     title: 'Project Success',
-    description: 'Successfully developed 9+ projects that streamlined processes and enhanced user experiences across various industries.',
+    description: 'Successfully developed 10+ projects that streamlined processes and enhanced user experiences across various industries.',
     icon: 'fas fa-rocket',
     iconBg: 'bg-gradient-to-r from-blue-500 to-blue-600',
     borderColor: 'border-blue-500',

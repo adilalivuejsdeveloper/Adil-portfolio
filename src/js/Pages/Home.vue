@@ -187,7 +187,7 @@
             <div class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Years Experience</div>
           </div>
           <div class="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm text-center">
-            <div class="text-2xl sm:text-3xl font-bold text-green-600 mb-2">9+</div>
+            <div class="text-2xl sm:text-3xl font-bold text-green-600 mb-2">10+</div>
             <div class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Projects Completed</div>
           </div>
           <div class="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm text-center">
