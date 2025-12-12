@@ -322,9 +322,26 @@ const projects = [
     live: "https://adrimoparis.com/",
     code: "",
   },
+ {
+    id: 7,
+    title: "Landing Page Development for Tramm Law Firm (GoHighLevel)",
+    description:
+      "I designed and developed a high-converting landing page for Tramm Law Firm inside GoHighLevel. The project included a custom Tailwind-styled layout, responsive UI, modal registration flow, integration of Demio’s webinar form, branding updates, content fixes, and performance optimization. I delivered a fully functional, conversion-focused page with seamless form embedding and clean user experience.",
+    image: "/images/TRAM-landing-page.png",
+    tags: [
+      "GoHighLevel",
+      "Landing Page Development",
+      "Tailwind CSS",
+      "JavaScript",
+      "HTML / CSS",
+      "Tailwind CSS",
+    ],
+    live: "https://app.gohighlevel.com/v2/preview/B9s7I6NHjVhCryT2lKgw?notrack=true",
+    code: "",
+  },
 
   {
-    id: 7,
+    id: 8,
     title: "SEO-Workforce",
     description:
       "A project for analyzing various aspects of websites. Developed all frontend and backend functionalities. Handled databases and server-side logic to analyze website metrics.",
@@ -334,7 +351,7 @@ const projects = [
     code: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "OD Talent",
     description:
       "A platform designed to connect and manage talent seamlessly. Developed a dynamic frontend solution with 5 custom pages. Created an interactive dashboard for talent management.",
@@ -345,7 +362,7 @@ const projects = [
     code: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "OdChat",
     description:
       "Development of a chatbot project. Developed a real-time, interactive chatbot solution similar to Tawk.to, enabling live customer support.",
@@ -356,7 +373,7 @@ const projects = [
     code: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Gulf Cars4u",
     description:
       "An online platform for buying and selling cars. Developed the front-end and integrated all backend functionalities through APIs. Connected databases and implemented server-side logic.",
