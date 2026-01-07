@@ -15,9 +15,9 @@
           <!-- Main Image Container -->
           <div class="relative">
             <!-- Profile Image -->
-            <div class="relative z-10">
+            <div class="relative">
               <img
-                :src="'/images/my-logo.webp'"
+                :src="'/images/adil_ali.png'"
                 alt="Adil Ali - Full Stack Web Developer"
                 class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl object-cover shadow-2xl border-4 border-white dark:border-gray-700 transition-transform duration-500 hover:scale-105"
               />
