@@ -1,6 +1,6 @@
 <template>
   <nav-component />
-  <hr class="m-0">
+  <hr class="m-0 dark:border-gray-800">
 
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900">
@@ -115,7 +115,7 @@
   </section>
 
   <!-- Professional Details Section -->
-  <section class="bg-white dark:bg-gray-900 py-20">
+  <section class="bg-white dark:bg-gray-900 transition-colors duration-300 py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
       <!-- Section Header -->
@@ -260,7 +260,7 @@
   </section>
 
   <!-- Technology Stack Section -->
-  <section class="bg-gray-50 dark:bg-gray-800 py-20">
+  <section class="bg-gray-50 dark:bg-gray-800 transition-colors duration-300 py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">

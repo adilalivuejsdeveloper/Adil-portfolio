@@ -1,7 +1,7 @@
 <template>
   <nav-component />
-  <hr class="m-0">
-  <section class="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+  <hr class="m-0 dark:border-gray-800">
+  <section class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 flex flex-col justify-center items-center text-center">
       <!-- Hero Section -->
       <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 px-2">

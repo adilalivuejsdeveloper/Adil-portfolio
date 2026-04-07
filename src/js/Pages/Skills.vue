@@ -1,35 +1,39 @@
 <template>
   <nav-component />
-  <hr class="m-0">
+  <hr class="m-0 dark:border-gray-800">
 
-  <section class="min-h-screen bg-gray-50 py-8 sm:py-12 lg:py-16">
+  <section class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 py-8 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header Section -->
       <div class="text-center mb-8 sm:mb-12 lg:mb-16">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div class="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <span>⚡</span>
+          <span>Technical Skills</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           My Skills
         </h1>
-        <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
           With 2.2 years of experience in web development, I've mastered a comprehensive set of technologies for building modern, scalable web applications.
         </p>
 
         <!-- Skills Overview Stats -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 max-w-2xl mx-auto mb-8 sm:mb-12">
-          <div class="bg-white rounded-xl p-3 sm:p-4 shadow-md border border-gray-100">
-            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600">10+</div>
-            <div class="text-xs sm:text-sm text-gray-500">Frontend Skills</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 sm:p-4 shadow-md border border-gray-100 dark:border-gray-700">
+            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600 dark:text-blue-400">10+</div>
+            <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Frontend Skills</div>
           </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 shadow-md border border-gray-100">
-            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-green-600">8+</div>
-            <div class="text-xs sm:text-sm text-gray-500">Backend Skills</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 sm:p-4 shadow-md border border-gray-100 dark:border-gray-700">
+            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-green-600 dark:text-green-400">8+</div>
+            <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Backend Skills</div>
           </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 shadow-md border border-gray-100">
-            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-600">5+</div>
-            <div class="text-xs sm:text-sm text-gray-500">Databases</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 sm:p-4 shadow-md border border-gray-100 dark:border-gray-700">
+            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-600 dark:text-purple-400">5+</div>
+            <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Databases</div>
           </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 shadow-md border border-gray-100">
-            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-orange-600">2.2+</div>
-            <div class="text-xs sm:text-sm text-gray-500">Years Exp</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-3 sm:p-4 shadow-md border border-gray-100 dark:border-gray-700">
+            <div class="text-lg sm:text-xl lg:text-2xl font-bold text-orange-600 dark:text-orange-400">2.2+</div>
+            <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Years Exp</div>
           </div>
         </div>
       </div>
@@ -39,7 +43,7 @@
         <div
           v-for="(category, index) in skills"
           :key="index"
-          class="group bg-white shadow-md hover:shadow-xl rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-blue-200"
+          class="group bg-white dark:bg-gray-800 shadow-md hover:shadow-xl rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-700"
         >
           <!-- Category Header -->
           <div class="flex items-center mb-4 sm:mb-6">
@@ -47,10 +51,10 @@
               <i :class="category.icon" class="text-white text-sm sm:text-base lg:text-lg"></i>
             </div>
             <div>
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
+              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                 {{ category.category }}
               </h3>
-              <p class="text-xs sm:text-sm text-gray-500">{{ category.items.length }} Skills</p>
+              <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">{{ category.items.length }} Skills</p>
             </div>
           </div>
 
@@ -59,18 +63,18 @@
             <div
               v-for="(skill, i) in category.items"
               :key="i"
-              class="group\/skill flex items-center justify-between p-2 sm:p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+              class="group/skill flex items-center justify-between p-2 sm:p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
             >
               <div class="flex items-center">
-                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center mr-2 sm:mr-3 group-hover\/skill:scale-110 transition-transform duration-200">
+                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/40 dark:to-purple-900/40 flex items-center justify-center mr-2 sm:mr-3 group-hover/skill:scale-110 transition-transform duration-200">
                   <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
                 </div>
-                <span class="text-sm sm:text-base font-medium text-gray-800 group-hover\/skill:text-blue-600 transition-colors duration-200">
+                <span class="text-sm sm:text-base font-medium text-gray-800 dark:text-gray-200 group-hover/skill:text-blue-600 dark:group-hover/skill:text-blue-400 transition-colors duration-200">
                   {{ skill.name }}
                 </span>
               </div>
 
-              <!-- Skill Level Indicator (Visual Only) -->
+              <!-- Skill Level Indicator -->
               <div class="flex items-center">
                 <div class="flex space-x-1">
                   <div
@@ -79,7 +83,7 @@
                     class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-colors duration-200"
                     :class="level <= getSkillLevel(skill.level)
                       ? 'bg-gradient-to-r from-blue-500 to-purple-500'
-                      : 'bg-gray-200'"
+                      : 'bg-gray-200 dark:bg-gray-600'"
                   ></div>
                 </div>
               </div>
@@ -89,12 +93,12 @@
       </div>
 
       <!-- Key Achievements Section -->
-      <div class="bg-white rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-lg p-6 sm:p-8 lg:p-12 border border-gray-100">
+      <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-lg p-6 sm:p-8 lg:p-12 border border-gray-100 dark:border-gray-700">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">
             Key Achievements
           </h2>
-          <p class="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Highlights of my professional journey and technical accomplishments
           </p>
         </div>
@@ -103,10 +107,9 @@
           <div
             v-for="(achievement, index) in achievements"
             :key="index"
-            class="group relative p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-white border-l-4 transition-all duration-300 hover:shadow-lg hover:scale-105"
+            class="group relative p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-700/50 dark:to-gray-800/50 border-l-4 transition-all duration-300 hover:shadow-lg hover:scale-105"
             :class="achievement.borderColor"
           >
-            <!-- Achievement Icon -->
             <div class="flex items-start">
               <div class="flex-shrink-0 mr-4">
                 <div
@@ -116,31 +119,25 @@
                   <i :class="achievement.icon"></i>
                 </div>
               </div>
-
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-800 dark:text-white mb-2 sm:mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                   {{ achievement.title }}
                 </h3>
-                <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                   {{ achievement.description }}
                 </p>
               </div>
-            </div>
-
-            <!-- Subtle Background Pattern -->
-            <div class="absolute top-0 right-0 w-20 h-20 opacity-5 overflow-hidden">
-              <i :class="achievement.icon" class="text-6xl transform rotate-12 translate-x-4 -translate-y-4"></i>
             </div>
           </div>
         </div>
 
         <!-- Call to Action -->
         <div class="mt-8 sm:mt-12 lg:mt-16 text-center">
-          <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 border border-blue-100">
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 border border-blue-100 dark:border-blue-800/30">
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">
               Ready to Work Together?
             </h3>
-            <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+            <p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Let's discuss how my skills can help bring your project to life with modern web technologies.
             </p>
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-md mx-auto">
@@ -153,7 +150,7 @@
               </router-link>
               <router-link
                 to="/projects"
-                class="w-full sm:w-auto inline-flex items-center justify-center border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 font-semibold text-sm sm:text-base"
+                class="w-full sm:w-auto inline-flex items-center justify-center border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all duration-200 transform hover:scale-105 font-semibold text-sm sm:text-base"
               >
                 <i class="fas fa-code mr-2"></i>
                 View My Work
@@ -271,7 +268,6 @@ const achievements = [
   },
 ];
 
-// Helper function to convert skill level to numeric value
 const getSkillLevel = (level) => {
   const levels = {
     'Beginner': 2,
@@ -284,50 +280,16 @@ const getSkillLevel = (level) => {
 </script>
 
 <style scoped>
-/* Custom scrollbar for mobile */
-::-webkit-scrollbar {
-  width: 4px;
-}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #3b82f6, #8b5cf6); border-radius: 2px; }
+html { scroll-behavior: smooth; }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
-  border-radius: 2px;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Enhanced hover effects */
-.group:hover .group-hover\:scale-110 {
-  transform: scale(1.1);
-}
-
-.group\/skill:hover .group-hover\/skill\:scale-110 {
-  transform: scale(1.1);
-}
-
-/* Loading animations */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
-.group {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
+.group { animation: fadeInUp 0.6s ease-out forwards; }
 .group:nth-child(1) { animation-delay: 0.1s; }
 .group:nth-child(2) { animation-delay: 0.2s; }
 .group:nth-child(3) { animation-delay: 0.3s; }
@@ -335,61 +297,11 @@ html {
 .group:nth-child(5) { animation-delay: 0.5s; }
 .group:nth-child(6) { animation-delay: 0.6s; }
 
-/* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
-
-/* Focus styles for better accessibility */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-}
-
-/* Ensure proper touch targets on mobile */
+a:focus-visible, button:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }
 @media (max-width: 768px) {
-  a, button {
-    min-height: 44px;
-    min-width: 44px;
-  }
-
-  /* Optimize spacing for small screens */
-  .group\/skill {
-    padding: 0.5rem;
-  }
-}
-
-/* Tablet optimizations */
-@media (min-width: 640px) and (max-width: 1024px) {
-  .sm\:grid-cols-2 {
-    gap: 1.5rem;
-  }
-}
-
-/* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .border {
-    border-width: 0.5px;
-  }
-}
-
-/* Print styles */
-@media print {
-  .shadow-lg,
-  .shadow-xl,
-  .shadow-md {
-    box-shadow: none !important;
-    border: 1px solid #e5e7eb;
-  }
-
-  .bg-gradient-to-r {
-    background: #3b82f6 !important;
-    color: white !important;
-  }
+  a, button { min-height: 44px; min-width: 44px; }
 }
 </style>
