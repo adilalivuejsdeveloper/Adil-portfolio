@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="grid gap-6 md:grid-cols-2">
         <div v-for="cat in categories" :key="cat.name" class="card card-hover p-6 sm:p-7">

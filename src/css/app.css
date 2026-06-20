@@ -15,32 +15,39 @@
 }
 
 :root {
-  --ground: #f7f8fa;
+  /* 3-tier surfaces: ground (page) → band (alt sections) → surface (cards) */
+  --ground: #e9edf3;
+  --band: #f3f6fa;
   --surface: #ffffff;
-  --surface-2: #eef1f6;
-  --border: #e4e8ef;
-  --border-strong: #cdd5e1;
+  --surface-2: #e4e9f1;
+  --border: #d7dee9;
+  --border-strong: #bdc8d8;
   --text: #0d1424;
   --text-muted: #51607a;
   --accent: #f59e0b;        /* fill */
   --accent-strong: #b45309; /* accent-as-text on light ground */
   --accent-ink: #1a1206;    /* text on amber fill */
-  --glow: rgba(245, 158, 11, 0.16);
+  --glow: rgba(245, 158, 11, 0.20);
+  --shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 14px 32px -20px rgba(15, 23, 42, .22);
+  --shadow-hover: 0 1px 2px rgba(15, 23, 42, .06), 0 28px 54px -26px rgba(15, 23, 42, .32);
   color-scheme: light;
 }
 
 .dark {
-  --ground: #0b0f1a;
-  --surface: #111726;
-  --surface-2: #161e30;
-  --border: #1e2738;
-  --border-strong: #2b3854;
+  --ground: #090d16;
+  --band: #0e1422;
+  --surface: #131c2e;
+  --surface-2: #1b2538;
+  --border: #213049;
+  --border-strong: #2e3e5a;
   --text: #e6eaf3;
-  --text-muted: #93a0b8;
+  --text-muted: #94a1b8;
   --accent: #fbbf24;
   --accent-strong: #fcd34d; /* accent-as-text on dark ground */
   --accent-ink: #1a1206;
-  --glow: rgba(251, 191, 36, 0.12);
+  --glow: rgba(251, 191, 36, 0.16);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 18px 38px -24px rgba(0, 0, 0, .8);
+  --shadow-hover: 0 1px 2px rgba(0, 0, 0, .5), 0 32px 64px -30px rgba(0, 0, 0, .95);
   color-scheme: dark;
 }
 
@@ -106,13 +113,21 @@
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
+    box-shadow: var(--shadow);
     @apply rounded-2xl;
     transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
   }
   .card-hover:hover {
     border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
     transform: translateY(-4px);
-    box-shadow: 0 24px 48px -28px rgba(0, 0, 0, .45);
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* alternating section band for page rhythm */
+  .band {
+    background: var(--band);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   /* buttons */

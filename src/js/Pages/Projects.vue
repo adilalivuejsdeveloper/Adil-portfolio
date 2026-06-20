@@ -21,7 +21,7 @@
     </div>
   </section>
 
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <article v-for="p in projects" :key="p.id" class="card card-hover group flex flex-col overflow-hidden">

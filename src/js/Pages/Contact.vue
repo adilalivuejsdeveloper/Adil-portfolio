@@ -35,7 +35,7 @@
     </div>
   </section>
 
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="grid gap-8 lg:grid-cols-12">
         <!-- Left: contact details -->

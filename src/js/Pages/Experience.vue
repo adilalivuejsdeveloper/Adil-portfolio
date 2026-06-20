@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <ol class="relative">
         <!-- vertical line -->

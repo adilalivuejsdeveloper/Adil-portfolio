@@ -57,7 +57,7 @@
   </section>
 
   <!-- ─────────────── STRENGTHS ─────────────── -->
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="max-w-2xl">
         <p class="eyebrow">What I bring</p>
@@ -76,7 +76,7 @@
   </section>
 
   <!-- ─────────────── EDUCATION ─────────────── -->
-  <section class="section pt-0">
+  <section class="section">
     <div class="wrap">
       <div class="grid gap-10 lg:grid-cols-12">
         <div class="lg:col-span-4">
@@ -103,7 +103,7 @@
   </section>
 
   <!-- ─────────────── CTA ─────────────── -->
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="card flex flex-col items-center justify-between gap-6 p-8 text-center sm:flex-row sm:p-10 sm:text-left">
         <div>

@@ -48,7 +48,7 @@
   </section>
 
   <!-- ─────────────── TECH STRIP ─────────────── -->
-  <section class="border-y" style="border-color: var(--border); background: var(--surface);">
+  <section class="band">
     <div class="wrap py-8">
       <div class="flex flex-col items-center gap-5 sm:flex-row sm:justify-between">
         <span class="mono text-xs uppercase tracking-[0.16em] text-muted">Daily toolkit</span>
@@ -85,7 +85,7 @@
   </section>
 
   <!-- ─────────────── SELECTED WORK ─────────────── -->
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="flex flex-wrap items-end justify-between gap-4">
         <div class="max-w-2xl">
@@ -117,7 +117,7 @@
   </section>
 
   <!-- ─────────────── PROCESS ─────────────── -->
-  <section class="section pt-0">
+  <section class="section">
     <div class="wrap">
       <div class="max-w-2xl">
         <p class="eyebrow">How I work</p>
@@ -136,7 +136,7 @@
   </section>
 
   <!-- ─────────────── CTA ─────────────── -->
-  <section class="section pt-0">
+  <section class="band section">
     <div class="wrap">
       <div class="card relative overflow-hidden p-8 text-center sm:p-14">
         <div class="grid-bg pointer-events-none absolute inset-0 opacity-50"></div>
