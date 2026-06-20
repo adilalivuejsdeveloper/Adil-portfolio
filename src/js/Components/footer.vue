@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white">
+  <footer class="bg-gray-900 dark:bg-gray-950 text-white border-t dark:border-gray-800 transition-colors duration-300">
     <!-- Main Footer Content -->
     <div class="max-w-7xl mx-auto px-6 py-16">
       <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
@@ -13,7 +13,7 @@
             <h3 class="text-2xl font-bold">Adil Ali</h3>
           </div>
           <p class="text-gray-300 mb-6 leading-relaxed">
-            Full Stack Web Developer with 2.2+ years of experience creating dynamic and user-friendly web applications.
+            Full Stack Web Developer with 2.8+ years of experience creating dynamic and user-friendly web applications.
             Specializing in Vue.js, Laravel, and modern web technologies to deliver scalable solutions.
           </p>
 
@@ -125,10 +125,10 @@
           <div>
             <h4 class="font-semibold mb-4">Experience</h4>
             <ul class="space-y-2 text-gray-300 text-sm">
-              <li>📍 Freelance Collaboration (2025 - Present)</li>
-              <li>📍 Chirp Technologies (Apr 2025 - Jun 2025)</li>
+              <li>📍 Freelance Collaboration (Apr 2025 - Present)</li>
+              <li>📍 4XPORTAL (Feb 2026 - Present)</li>
               <li>📍 Intelliage Solutions (Aug 2023 - Mar 2025)</li>
-              <li class="text-indigo-400">2.2+ Years Experience</li>
+              <li class="text-indigo-400">2.8+ Years Experience</li>
             </ul>
           </div>
 

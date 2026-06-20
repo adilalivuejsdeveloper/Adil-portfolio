@@ -221,10 +221,17 @@ export default {
   mounted() {
     // Restore saved theme
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    
+    // Default to dark mode if no theme is saved or if saved theme is 'dark'
+    if (savedTheme === 'dark' || !savedTheme) {
       document.documentElement.classList.add('dark');
       this.isDark = true;
+      if (!savedTheme) {
+        localStorage.setItem('theme', 'dark');
+      }
+    } else {
+      document.documentElement.classList.remove('dark');
+      this.isDark = false;
     }
 
     document.addEventListener('click', this.handleOutsideClick);

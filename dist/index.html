@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <script type="module" crossorigin src="/assets/index-RBrYNUIO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D7LBUAZi.css">
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme')) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-DdU16TKX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BNBGZ4sa.css">
 </head>
 <body>
   <div id="app"></div>

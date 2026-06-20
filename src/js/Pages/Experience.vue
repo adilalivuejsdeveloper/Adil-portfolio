@@ -15,7 +15,7 @@
           Professional Experience
         </h1>
         <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-          With 2.2 years of experience in web development, I have worked with various companies and collaborated on international projects, developing expertise in full-stack web development.
+          With 2.8 years of experience in web development, I have worked with various companies and collaborated on international projects, developing expertise in full-stack web development.
         </p>
       </div>
 
@@ -98,37 +98,36 @@
 <script setup>
 const experiences = [
   {
-    position: 'Full Stack Web Developer (Remote)',
-    company: 'Freelance Collaboration',
-    duration: '06/2025 — Present',
-    description: 'Currently working on international freelance projects',
+    position: 'Laravel & Vue JS Web Developer',
+    company: 'Freelance Collaboration · Full-time',
+    duration: '04/2025 — Present',
+    description: 'International freelance projects, delivered remotely from Lahore',
     tasks: [
-      'Collaborated with international freelancers on full-stack web development projects',
-      'Developed dynamic web applications using Vue.js and Laravel',
-      'Integrated APIs and implemented real-time functionality',
-      'Worked on various projects including e-commerce, IoT, and trading systems',
+      'Collaborating with international clients on full-stack web development projects',
+      'Developing dynamic web applications using Vue.js and Laravel',
+      'Integrating APIs and implementing real-time functionality',
+      'Working across various domains including e-commerce, IoT, and trading systems',
     ],
   },
   {
-    position: 'Full Stack Web Developer',
-    company: 'Chirp Technologies',
-    duration: '04/2025 — 06/2025',
-    description: 'Focused on developing robust web applications with scalable architecture',
+    position: 'Full Stack Developer',
+    company: '4XPORTAL · Full-time',
+    duration: '02/2026 — Present',
+    description: 'Working on CRM-based financial applications in Lahore (On-site)',
     tasks: [
-      'Developed robust web applications with a strong focus on back-end technologies',
-      'Designed and implemented scalable RESTful APIs',
-      'Built dynamic frontend solutions with Vue.js and modern CSS frameworks',
-      'Handled database operations and server-side logic optimization',
-      'Integrated third-party services and APIs for enhanced functionality',
+      'Building CRM-based financial applications using Laravel and Vue.js',
+      'Developing REST APIs and implementing core business logic',
+      'Building responsive, reusable UI components',
+      'Collaborating with the team to enhance system performance, maintain code quality, and deliver scalable solutions',
     ],
   },
   {
-    position: 'Full Stack Web Developer',
-    company: 'Intelliage Solutions',
+    position: 'Laravel & Vue JS Web Developer',
+    company: 'Intelliage Solutions · Full-time',
     duration: '08/2023 — 03/2025',
-    description: 'A company focused on developing web solutions',
+    description: 'Full-stack web development, on-site in Chunian, Punjab',
     tasks: [
-      'Developed strong full-stack web applications focusing on both front-end and back-end technologies',
+      'Developed full-stack web applications focusing on both front-end and back-end technologies',
       'Built responsive and user-friendly interfaces using Vue.js and Tailwind CSS',
       'Implemented server-side logic and database management with Laravel and MySQL',
       'Collaborated with team members on various web development projects',

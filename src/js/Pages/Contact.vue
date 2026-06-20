@@ -31,7 +31,7 @@
         </div>
         <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h1>
         <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
-          I'm a Full Stack Web Developer with 2.2 years of experience ready to help bring your web development projects to life.
+          I'm a Full Stack Web Developer with 2.8 years of experience ready to help bring your web development projects to life.
         </p>
       </div>
 

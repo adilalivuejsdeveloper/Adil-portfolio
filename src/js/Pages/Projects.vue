@@ -1,9 +1,9 @@
 <template>
   <nav-component />
-  <hr class="m-0" />
+  <hr class="m-0 dark:border-gray-800" />
 
   <section
-    class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white py-8 sm:py-12 lg:py-16"
+    class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300 py-8 sm:py-12 lg:py-16"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header Section -->
@@ -43,7 +43,7 @@
           <div
             class="bg-white dark:bg-gray-800 rounded-xl px-4 sm:px-6 py-3 sm:py-4 shadow-md border border-gray-100 dark:border-gray-700"
           >
-            <div class="text-xl sm:text-2xl font-bold text-purple-600">2.2+</div>
+            <div class="text-xl sm:text-2xl font-bold text-purple-600">2.8+</div>
             <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
               Years Experience
             </div>
@@ -254,6 +254,17 @@
 <script setup>
 const projects = [
   {
+    id: 12,
+    title: "Pak Properties",
+    description:
+      "My own real estate platform for Pakistan, enabling users to list, search, and explore properties for sale and rent. Built with a focus on fast browsing, advanced filtering, and a clean, responsive experience for both buyers and sellers.",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
+    tags: ["Real Estate", "Vue.js", "Laravel", "MySQL", "Tailwind CSS"],
+    live: "https://pakproperties.pk/",
+    code: "",
+  },
+  {
     id: 1,
     title: "FXBOT",
     description:
@@ -391,6 +402,7 @@ const projects = [
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -398,6 +410,7 @@ const projects = [
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
