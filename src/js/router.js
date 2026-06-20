@@ -7,14 +7,19 @@ const routesarray = [
         component: () => import('./Pages/Home.vue'),
     },
     {
+        path: '/about',
+        name: 'About',
+        component: () => import('./Pages/About.vue'),
+    },
+    {
         path: '/projects',
         name: 'Projects',
         component: () => import('./Pages/Projects.vue'),
     },
     {
-        path: '/about',
-        name: 'About',
-        component: () => import('./Pages/About.vue'),
+        path: '/skills',
+        name: 'Skills',
+        component: () => import('./Pages/Skills.vue'),
     },
     {
         path: '/experience',
@@ -26,20 +31,19 @@ const routesarray = [
         name: 'Contact',
         component: () => import('./Pages/Contact.vue'),
     },
-    {
-        path: '/skills',
-        name: 'skills',
-        component: () => import('./Pages/Skills.vue'),
-    },
-    {
-        path: '/blog',
-        name: 'Blog',
-        component: () => import('./Pages/Blog.vue'),
-    },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes: routesarray,
+    scrollBehavior(to, from, savedPosition) {
+        if (to.hash) {
+            return { el: to.hash, behavior: 'smooth', top: 80 }
+        }
+        if (savedPosition) {
+            return savedPosition
+        }
+        return { top: 0 }
+    },
 })
 export default router

@@ -1,414 +1,116 @@
 <template>
   <nav-component />
-  <hr class="m-0 dark:border-gray-800">
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-24">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-        <!-- Image Section with Enhanced Design -->
-        <div class="relative flex justify-center lg:justify-end order-2 lg:order-1">
-          <!-- Background Decorations -->
-          <div class="absolute inset-0 bg-gradient-to-r from-indigo-200 to-purple-200 dark:from-indigo-800 dark:to-purple-800 rounded-full opacity-20 blur-3xl transform scale-110"></div>
-
-          <!-- Main Image Container -->
-          <div class="relative">
-            <!-- Profile Image -->
-            <div class="relative">
-              <img
-                :src="'/images/adil_ali.png'"
-                alt="Adil Ali - Full Stack Web Developer"
-                class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl object-cover shadow-2xl border-4 border-white dark:border-gray-700 transition-transform duration-500 hover:scale-105"
-              />
-              <!-- Status Badge -->
-              <div class="absolute -bottom-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
-                <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-                <span class="text-sm font-medium">Available for work</span>
-              </div>
-            </div>
-
-            <!-- Floating Cards -->
-            <div class="absolute -top-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div class="text-2xl mb-2">🚀</div>
-              <div class="text-sm font-semibold text-gray-800 dark:text-white">2.8+ Years</div>
-              <div class="text-xs text-gray-500 dark:text-gray-400">Experience</div>
-            </div>
-
-            <div class="absolute -bottom-8 -left-8 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div class="text-2xl mb-2">💻</div>
-              <div class="text-sm font-semibold text-gray-800 dark:text-white">10+ Projects</div>
-              <div class="text-xs text-gray-500 dark:text-gray-400">Completed</div>
-            </div>
-
-            <div class="absolute top-1/2 -right-12 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transform rotate-6 hover:rotate-0 transition-transform duration-300">
-              <div class="text-2xl mb-2">⚡</div>
-              <div class="text-sm font-semibold text-gray-800 dark:text-white">Full Stack</div>
-              <div class="text-xs text-gray-500 dark:text-gray-400">Developer</div>
-            </div>
+  <!-- ─────────────── INTRO ─────────────── -->
+  <section class="relative overflow-hidden">
+    <div class="grid-bg pointer-events-none absolute inset-0 opacity-50"></div>
+    <div class="wrap relative py-16 sm:py-24">
+      <div class="grid items-center gap-12 lg:grid-cols-12">
+        <!-- Text -->
+        <div class="lg:col-span-7">
+          <p class="eyebrow">About me</p>
+          <h1 class="mt-5 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+            Engineer who ships, <br class="hidden sm:block" />not just codes.
+          </h1>
+          <div class="mt-6 space-y-4 text-base leading-relaxed text-muted">
+            <p>
+              I'm Adil Ali, a full-stack web developer based in <span class="text-accent">Lahore, Pakistan</span>,
+              with 2 years 11 months of professional experience. I currently build CRM-based financial
+              applications at 4XPORTAL using Laravel and Vue.js.
+            </p>
+            <p>
+              My work spans the whole stack — designing database schemas, writing the REST APIs and business
+              logic, building the Vue interfaces on top, and handling the Docker, CI/CD, and VPS hosting that
+              get it all into production. I've delivered for clients across e-commerce, IoT, healthcare,
+              fire-safety, and trading.
+            </p>
+            <p>
+              I care about clean, maintainable code and clear communication. For remote clients that means
+              predictable timelines, frequent check-ins, and software that keeps running long after handover.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="/Adil-Ali-CV.pdf" download class="btn btn-primary"><i class="fas fa-download text-xs"></i> Download CV</a>
+            <router-link to="/contact" class="btn btn-ghost">Let's talk <i class="fas fa-arrow-right text-xs"></i></router-link>
           </div>
         </div>
 
-        <!-- Content Section -->
-        <div class="order-1 lg:order-2 space-y-8">
-          <!-- Header -->
-          <div>
-            <div class="inline-flex items-center space-x-2 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-4">
-              <span>👋</span>
-              <span>Hello, I'm</span>
+        <!-- Image -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-sm">
+            <div class="card overflow-hidden p-2">
+              <img src="/images/adil_ali.png" alt="Adil Ali — Full-Stack Developer"
+                   class="aspect-square w-full rounded-xl object-cover" />
             </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-              Adil Ali
-            </h1>
-            <h2 class="text-xl sm:text-2xl text-indigo-600 dark:text-indigo-400 font-semibold mb-6">
-              Full Stack Web Developer
-            </h2>
-          </div>
-
-          <!-- Description -->
-          <div class="space-y-4">
-            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Passionate Full Stack Web Developer from <strong class="text-indigo-600 dark:text-indigo-400">Lahore, Pakistan</strong> with <strong class="text-indigo-600 dark:text-indigo-400">2.8 years of experience</strong> in creating dynamic, user-friendly web applications using cutting-edge technologies.
-            </p>
-            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I specialize in building scalable web solutions with <strong>Vue.js, Laravel, Tailwind CSS</strong>, and modern development practices. My expertise spans both frontend and backend development, delivering complete digital solutions.
-            </p>
-          </div>
-
-          <!-- Key Stats -->
-          <div class="grid grid-cols-3 gap-4">
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
-              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">2.8+</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">Years Exp.</div>
+            <div class="card absolute -bottom-5 -left-5 px-4 py-3">
+              <div class="display text-xl font-bold text-accent">2y 11m</div>
+              <div class="mono text-[11px] uppercase tracking-wider text-muted">Experience</div>
             </div>
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
-              <div class="text-2xl font-bold text-green-600">10+</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">Projects</div>
+            <div class="card absolute -right-4 top-6 px-4 py-3">
+              <div class="display text-xl font-bold text-accent">12</div>
+              <div class="mono text-[11px] uppercase tracking-wider text-muted">Projects</div>
             </div>
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
-              <div class="text-2xl font-bold text-purple-600">10+</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">Technologies</div>
-            </div>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/Adil-Ali-CV.pdf"
-              download
-              class="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <span class="mr-2">📄</span>
-              Download CV
-            </a>
-            <router-link
-              to="/contact"
-              class="inline-flex items-center justify-center px-8 py-4 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <span class="mr-2">💬</span>
-              Let's Talk
-            </router-link>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Professional Details Section -->
-  <section class="bg-white dark:bg-gray-900 transition-colors duration-300 py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Professional Background
-        </h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Combining technical expertise with creative problem-solving to deliver exceptional web solutions
-        </p>
+  <!-- ─────────────── STRENGTHS ─────────────── -->
+  <section class="section pt-0">
+    <div class="wrap">
+      <div class="max-w-2xl">
+        <p class="eyebrow">What I bring</p>
+        <h2 class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">How I add value to a team</h2>
       </div>
-
-      <div class="grid lg:grid-cols-3 gap-8 mb-16">
-
-        <!-- Education -->
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl border border-blue-100 dark:border-gray-600">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
-              <span class="text-white text-xl">🎓</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Education</h3>
+      <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div v-for="s in strengths" :key="s.title" class="card card-hover p-6">
+          <div class="flex size-11 items-center justify-center rounded-xl" style="background: var(--surface-2); color: var(--accent-strong);">
+            <i :class="s.icon" class="text-lg"></i>
           </div>
-          <div class="space-y-4">
-            <div class="border-l-4 border-blue-500 pl-4">
-              <h4 class="font-semibold text-gray-900 dark:text-white">Software Engineering</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-300">Virtual University of Pakistan</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Currently Pursuing</p>
-            </div>
-            <div class="border-l-4 border-green-500 pl-4">
-              <h4 class="font-semibold text-gray-900 dark:text-white">Intermediate F.SC</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-300">Aspire Group of Colleges</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Completed 2021</p>
-            </div>
-          </div>
+          <h3 class="mt-5 text-lg font-semibold">{{ s.title }}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">{{ s.desc }}</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Experience -->
-        <div class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl border border-green-100 dark:border-gray-600">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mr-4">
-              <span class="text-white text-xl">💼</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Experience</h3>
-          </div>
-          <div class="space-y-4">
-            <div class="border-l-4 border-green-500 pl-4">
-              <h4 class="font-semibold text-gray-900 dark:text-white">Freelance Developer</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-300">International Projects</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">2025 - Present</p>
-            </div>
-            <div class="border-l-4 border-blue-500 pl-4">
-              <h4 class="font-semibold text-gray-900 dark:text-white">Chirp Technologies</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-300">Full Stack Developer</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Apr - Jun 2025</p>
-            </div>
-            <div class="border-l-4 border-purple-500 pl-4">
-              <h4 class="font-semibold text-gray-900 dark:text-white">Intelliage Solutions</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-300">Full Stack Developer</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Aug 2023 - Mar 2025</p>
-            </div>
-          </div>
+  <!-- ─────────────── EDUCATION ─────────────── -->
+  <section class="section pt-0">
+    <div class="wrap">
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <p class="eyebrow">Background</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Education &amp; growth</h2>
+          <p class="mt-4 text-muted">Formal study alongside continuous, hands-on learning across the stack.</p>
         </div>
-
-        <!-- Languages & Contact -->
-        <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl border border-purple-100 dark:border-gray-600">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
-              <span class="text-white text-xl">🌐</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Contact & Languages</h3>
-          </div>
+        <div class="lg:col-span-8">
           <div class="space-y-4">
-            <div class="space-y-3">
-              <div class="flex items-center text-gray-600 dark:text-gray-300">
-                <span class="mr-3">🇬🇧</span>
-                <span>English (Fluent)</span>
-              </div>
-              <div class="flex items-center text-gray-600 dark:text-gray-300">
-                <span class="mr-3">🇵🇰</span>
-                <span>Urdu (Native)</span>
-              </div>
-            </div>
-            <div class="pt-4 border-t border-purple-200 dark:border-gray-600">
-              <div class="space-y-2">
-                <a href="tel:03054365536" class="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
-                  <span class="mr-2">📱</span>
-                  03054365536
-                </a>
-                <a href="mailto:adilalibhatti05@gmail.com" class="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
-                  <span class="mr-2">📧</span>
-                  adilalibhatti05@gmail.com
-                </a>
-                <div class="flex items-center text-sm text-gray-600 dark:text-gray-300">
-                  <span class="mr-2">📍</span>
-                  Lahore, Punjab, Pakistan
+            <div v-for="e in education" :key="e.title" class="card p-6">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-lg font-semibold">{{ e.title }}</h3>
+                  <p class="text-accent">{{ e.org }}</p>
                 </div>
+                <span class="tag">{{ e.period }}</span>
               </div>
+              <p class="mt-3 text-sm leading-relaxed text-muted">{{ e.note }}</p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Key Highlights Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">🚀</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Scalable Solutions</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Developed robust web applications with scalable RESTful APIs</p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">🌍</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Global Collaboration</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Collaborated with international freelancers on diverse projects</p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">📱</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Mobile Development</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Mobile app development and SEO optimization expertise</p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">🎨</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">UI/UX Design</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Proficient in Figma for creating intuitive user interfaces</p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">💻</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Code Quality</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Strong understanding of OOP principles and best practices</p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
-          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">⚡</div>
-          <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Performance</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Optimized applications for speed and user experience</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technology Stack Section -->
-  <section class="bg-gray-50 dark:bg-gray-800 transition-colors duration-300 py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Technology Stack
-        </h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Modern technologies and frameworks I use to build exceptional web applications
-        </p>
-      </div>
-
-      <!-- Frontend Technologies -->
-      <div class="mb-16">
-        <h3 class="text-2xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-8">
-          Frontend Development
-        </h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
-          <!-- HTML5 -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                class="w-full h-full object-contain"
-                alt="HTML5"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">HTML5</span>
-          </div>
-
-          <!-- Vue.js -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
-                class="w-full h-full object-contain"
-                alt="Vue.js"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Vue.js</span>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                class="w-full h-full object-contain"
-                alt="JavaScript"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">JavaScript</span>
-          </div>
-
-          <!-- Tailwind CSS -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 flex items-center justify-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-lg">TW</span>
-              </div>
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Tailwind CSS</span>
-          </div>
-
-          <!-- Bootstrap -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                class="w-full h-full object-contain"
-                alt="Bootstrap"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Bootstrap</span>
-          </div>
+  <!-- ─────────────── CTA ─────────────── -->
+  <section class="section pt-0">
+    <div class="wrap">
+      <div class="card flex flex-col items-center justify-between gap-6 p-8 text-center sm:flex-row sm:p-10 sm:text-left">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight">Looking for a reliable developer?</h2>
+          <p class="mt-2 text-muted">I'm available for freelance and contract work.</p>
         </div>
-      </div>
-
-      <!-- Backend Technologies -->
-      <div>
-        <h3 class="text-2xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-8">
-          Backend & Database
-        </h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
-          <!-- PHP -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                class="w-full h-full object-contain"
-                alt="PHP"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">PHP</span>
-          </div>
-
-          <!-- Laravel -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 flex items-center justify-center">
-              <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-lg">L</span>
-              </div>
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Laravel</span>
-          </div>
-
-          <!-- MySQL -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                class="w-full h-full object-contain"
-                alt="MySQL"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">MySQL</span>
-          </div>
-
-          <!-- MongoDB -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                class="w-full h-full object-contain"
-                alt="MongoDB"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">MongoDB</span>
-          </div>
-
-          <!-- Figma -->
-          <div class="flex flex-col items-center group">
-            <div class="w-20 h-20 lg:w-24 lg:h-24 mb-4 p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                class="w-full h-full object-contain"
-                alt="Figma"
-                loading="lazy"
-              />
-            </div>
-            <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Figma</span>
-          </div>
-        </div>
+        <router-link to="/contact" class="btn btn-primary shrink-0"><i class="fas fa-paper-plane"></i> Get in touch</router-link>
       </div>
     </div>
   </section>
@@ -416,5 +118,34 @@
   <footer-component />
 </template>
 
-<script>
+<script setup>
+const strengths = [
+  { icon: 'fas fa-layer-group', title: 'True full-stack', desc: 'I own features end-to-end — schema, API, UI, and deployment — so nothing falls between roles.' },
+  { icon: 'fas fa-server', title: 'Ships to production', desc: 'Docker, CI/CD, and VPS/Nginx hosting are part of the job, not an afterthought handed to someone else.' },
+  { icon: 'fas fa-comments', title: 'Clear communication', desc: 'Frequent updates, plain language, and timelines you can plan around — ideal for remote work.' },
+  { icon: 'fas fa-code', title: 'Maintainable code', desc: 'Readable, documented, and structured so the next developer (or future you) can extend it easily.' },
+  { icon: 'fas fa-bolt', title: 'Performance-minded', desc: 'I profile queries and frontend load, and tune real apps to stay fast under real traffic.' },
+  { icon: 'fas fa-globe', title: 'Client-ready', desc: 'Experience delivering for international clients across multiple industries and time zones.' },
+];
+
+const education = [
+  {
+    title: 'BS Software Engineering',
+    org: 'Virtual University of Pakistan',
+    period: 'Currently pursuing',
+    note: 'Studying software engineering fundamentals while working full-time as a developer.',
+  },
+  {
+    title: 'Intermediate — F.Sc (Pre-Medical)',
+    org: 'Aspire Group of Colleges',
+    period: 'Completed 2021',
+    note: 'Completed pre-medical before moving full-time into software development.',
+  },
+  {
+    title: 'Self-directed engineering',
+    org: 'Ongoing',
+    period: '2021 — Present',
+    note: 'Continuously learning modern practices — Vue 3, Laravel, Docker, CI/CD, and deployment workflows.',
+  },
+];
 </script>

@@ -1,257 +1,179 @@
 <template>
   <nav-component />
-  <hr class="m-0 dark:border-gray-800">
 
-  <!-- Toast Notification -->
-  <div
-    v-if="showToast"
-    :class="[
-      'fixed top-20 right-4 z-50 max-w-sm p-4 rounded-xl shadow-xl transition-all duration-300 transform border',
-      toastType === 'success'
-        ? 'bg-green-50 dark:bg-green-900/40 border-green-400 dark:border-green-600 text-green-700 dark:text-green-300'
-        : 'bg-red-50 dark:bg-red-900/40 border-red-400 dark:border-red-600 text-red-700 dark:text-red-300'
-    ]"
+  <!-- Toast -->
+  <transition
+    enter-active-class="transition duration-300 ease-out"
+    enter-from-class="opacity-0 translate-y-2"
+    enter-to-class="opacity-100 translate-y-0"
+    leave-active-class="transition duration-200 ease-in"
+    leave-from-class="opacity-100"
+    leave-to-class="opacity-0"
   >
-    <div class="flex items-start">
-      <div class="flex-1">
-        <p class="text-sm font-medium">{{ toastMessage }}</p>
+    <div v-if="showToast" class="fixed right-4 top-20 z-50 max-w-sm rounded-xl border p-4 shadow-xl"
+         :style="toastType === 'success'
+           ? 'background: var(--surface); border-color: var(--accent);'
+           : 'background: var(--surface); border-color: #ef4444;'">
+      <div class="flex items-start gap-3">
+        <p class="flex-1 text-sm font-medium">{{ toastMessage }}</p>
+        <button @click="showToast = false" class="text-muted transition-colors hover:text-accent">✕</button>
       </div>
-      <button @click="showToast = false" class="ml-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors">✕</button>
     </div>
-  </div>
+  </transition>
 
-  <section class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 py-12 px-4 sm:px-6 lg:px-16">
-    <div class="max-w-6xl mx-auto">
-
-      <!-- Page Header -->
-      <div class="text-center mb-12">
-        <div class="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-4">
-          <span>💬</span>
-          <span>Let's Chat</span>
-        </div>
-        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h1>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
-          I'm a Full Stack Web Developer with 2.8 years of experience ready to help bring your web development projects to life.
+  <section class="relative overflow-hidden">
+    <div class="grid-bg pointer-events-none absolute inset-0 opacity-50"></div>
+    <div class="wrap relative py-16 sm:py-20">
+      <div class="max-w-2xl">
+        <p class="eyebrow">Contact</p>
+        <h1 class="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">Let's build something</h1>
+        <p class="mt-5 text-base leading-relaxed text-muted">
+          Tell me about your project and I'll reply within 24 hours with honest scope, timeline, and a quote.
+          Prefer a quick chat? Call or email directly.
         </p>
       </div>
+    </div>
+  </section>
 
-      <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Contact Information -->
-        <div>
-          <div class="space-y-5 mb-8">
-            <div class="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span class="text-blue-600 dark:text-blue-400 text-xl">📞</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 dark:text-white text-sm">Phone</h3>
-                <a href="tel:03054365536" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">03054365536</a>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span class="text-blue-600 dark:text-blue-400 text-xl">📧</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 dark:text-white text-sm">Email</h3>
-                <a href="mailto:adilalibhatti05@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline font-medium break-all">adilalibhatti05@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span class="text-blue-600 dark:text-blue-400 text-xl">🌐</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 dark:text-white text-sm">Portfolio</h3>
-                <a href="https://adilali.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">https://adilali.vercel.app/</a>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span class="text-blue-600 dark:text-blue-400 text-xl">💼</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 dark:text-white text-sm">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">Connect with me</a>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span class="text-blue-600 dark:text-blue-400 text-xl">📍</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-gray-800 dark:text-white text-sm">Location</h3>
-                <p class="text-gray-600 dark:text-gray-300 font-medium">Lahore, Punjab, Pakistan</p>
-              </div>
-            </div>
+  <section class="section pt-0">
+    <div class="wrap">
+      <div class="grid gap-8 lg:grid-cols-12">
+        <!-- Left: contact details -->
+        <div class="lg:col-span-5">
+          <div class="space-y-3">
+            <a v-for="c in channels" :key="c.label" :href="c.href" :target="c.external ? '_blank' : undefined"
+               :rel="c.external ? 'noopener noreferrer' : undefined"
+               class="card card-hover flex items-center gap-4 p-4">
+              <span class="flex size-11 items-center justify-center rounded-xl" style="background: var(--surface-2); color: var(--accent-strong);">
+                <i :class="c.icon"></i>
+              </span>
+              <span class="min-w-0">
+                <span class="mono block text-xs uppercase tracking-wider text-muted">{{ c.label }}</span>
+                <span class="block truncate font-medium">{{ c.value }}</span>
+              </span>
+            </a>
           </div>
 
-          <!-- Services I Offer -->
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm">
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Services I Offer</h3>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li v-for="service in services" :key="service" class="flex items-center space-x-2">
-                <span class="text-green-500 dark:text-green-400 font-bold">✓</span>
-                <span>{{ service }}</span>
+          <div class="card mt-6 p-6">
+            <div class="flex items-center gap-2.5">
+              <span class="relative flex size-2.5">
+                <span class="absolute inline-flex size-full animate-ping rounded-full" style="background: var(--accent); opacity:.55;"></span>
+                <span class="relative inline-flex size-2.5 rounded-full" style="background: var(--accent);"></span>
+              </span>
+              <span class="mono text-xs uppercase tracking-[0.16em] text-accent">Available for work</span>
+            </div>
+            <h3 class="mt-4 text-sm font-semibold">What I can help with</h3>
+            <ul class="mt-3 space-y-2">
+              <li v-for="s in services" :key="s" class="flex gap-2.5 text-sm text-muted">
+                <i class="fas fa-circle-check mt-1 text-xs text-accent"></i><span>{{ s }}</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div>
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-2">Send Me a Message</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-6">
-              Ready to start your project? Fill out the form below and I'll get back to you within 24 hours.
-            </p>
+        <!-- Right: form -->
+        <div class="lg:col-span-7">
+          <div class="card p-6 sm:p-8">
+            <h2 class="text-xl font-semibold">Send a message</h2>
+            <p class="mt-1 text-sm text-muted">Fields marked * are required.</p>
 
-            <form @submit.prevent="handleSubmit" class="space-y-5">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <form @submit.prevent="handleSubmit" class="mt-6 space-y-5">
+              <div class="grid gap-5 sm:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Name *</label>
-                  <input
-                    v-model="form.name"
-                    type="text"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200"
-                    placeholder="Your full name"
-                  />
+                  <label class="label">Name *</label>
+                  <input v-model="form.name" type="text" required class="field" placeholder="Your full name" />
                 </div>
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Email *</label>
-                  <input
-                    v-model="form.email"
-                    type="email"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200"
-                    placeholder="your.email@example.com"
-                  />
+                  <label class="label">Email *</label>
+                  <input v-model="form.email" type="email" required class="field" placeholder="you@example.com" />
                 </div>
               </div>
 
-              <div>
-                <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Phone</label>
-                <input
-                  v-model="form.phone"
-                  type="tel"
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200"
-                  placeholder="Your phone number"
-                />
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label class="label">Phone</label>
+                  <input v-model="form.phone" type="tel" class="field" placeholder="Optional" />
+                </div>
+                <div>
+                  <label class="label">Project type</label>
+                  <select v-model="form.projectType" class="field">
+                    <option value="">Select project type</option>
+                    <option value="full-stack-web-app">Full-Stack Web Application</option>
+                    <option value="frontend-development">Frontend Development</option>
+                    <option value="backend-api">Backend / API Development</option>
+                    <option value="ecommerce">E-commerce Platform</option>
+                    <option value="dashboard">Admin Dashboard / CRM</option>
+                    <option value="devops">DevOps / Deployment</option>
+                    <option value="maintenance">Maintenance & Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
               </div>
 
               <div>
-                <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Project Type</label>
-                <select
-                  v-model="form.projectType"
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200"
-                >
-                  <option value="">Select project type</option>
-                  <option value="full-stack-web-app">Full-Stack Web Application</option>
-                  <option value="frontend-development">Frontend Development</option>
-                  <option value="backend-api">Backend API Development</option>
-                  <option value="ecommerce">E-commerce Platform</option>
-                  <option value="dashboard">Admin Dashboard</option>
-                  <option value="mobile-app">Mobile App Development</option>
-                  <option value="iot-solution">IoT Solution</option>
-                  <option value="consulting">Consulting</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Budget Range</label>
-                <select
-                  v-model="form.budget"
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200"
-                >
+                <label class="label">Budget range</label>
+                <select v-model="form.budget" class="field">
                   <option value="">Select budget range</option>
-                  <option value="500-1000">$500 - $1,000</option>
-                  <option value="1000-2500">$1,000 - $2,500</option>
-                  <option value="2500-5000">$2,500 - $5,000</option>
-                  <option value="5000-10000">$5,000 - $10,000</option>
+                  <option value="500-1000">$500 – $1,000</option>
+                  <option value="1000-2500">$1,000 – $2,500</option>
+                  <option value="2500-5000">$2,500 – $5,000</option>
+                  <option value="5000-10000">$5,000 – $10,000</option>
                   <option value="10000+">$10,000+</option>
                 </select>
               </div>
 
               <div>
-                <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Project Details *</label>
-                <textarea
-                  v-model="form.message"
-                  rows="5"
-                  required
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 outline-none transition-all duration-200 resize-none"
-                  placeholder="Describe your project requirements, timeline, and any specific technologies you'd like to use..."
-                ></textarea>
+                <label class="label">Project details *</label>
+                <textarea v-model="form.message" rows="5" required class="field resize-none"
+                          placeholder="Describe your project, timeline, and any specific technologies..."></textarea>
               </div>
 
-              <div>
-                <button
-                  type="submit"
-                  :disabled="isSubmitting"
-                  :class="[
-                    'w-full font-semibold py-3.5 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg',
-                    isSubmitting
-                      ? 'bg-gray-400 dark:bg-gray-600 cursor-not-allowed text-white'
-                      : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 hover:shadow-xl transform hover:scale-[1.02]'
-                  ]"
-                >
-                  <span v-if="isSubmitting">
-                    <svg class="animate-spin h-5 w-5 mr-2 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    Sending...
-                  </span>
-                  <span v-else class="flex items-center gap-2">
-                    <span>Send Message</span>
-                    <span>🚀</span>
-                  </span>
-                </button>
-              </div>
+              <button type="submit" :disabled="isSubmitting" class="btn btn-primary w-full"
+                      :class="{ 'cursor-not-allowed opacity-60': isSubmitting }">
+                <span v-if="isSubmitting" class="flex items-center gap-2">
+                  <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                  </svg>
+                  Sending…
+                </span>
+                <span v-else class="flex items-center gap-2"><i class="fas fa-paper-plane"></i> Send message</span>
+              </button>
             </form>
 
-            <div class="mt-6 text-center">
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Prefer direct contact? Call me at
-                <a href="tel:03054365536" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">03054365536</a>
-              </p>
-            </div>
+            <p class="mt-5 text-center text-sm text-muted">
+              Prefer direct contact? Call
+              <a href="tel:03054365536" class="link-accent">0305 4365536</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <footer-component />
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-const services = [
-  'Full-Stack Web Development (Vue.js + Laravel)',
-  'RESTful API Development & Integration',
-  'Dynamic Frontend Solutions with Vue.js',
-  'Responsive Web Design (Tailwind CSS, Bootstrap)',
-  'Database Design & Management (MySQL, MongoDB)',
-  'Real-time Applications & Chatbots',
-  'IoT Web Solutions & Sensor Integration',
-  'Mobile App Development',
-  'SEO Optimization & Website Analytics',
+const channels = [
+  { label: 'Email', value: 'adilalibhatti05@gmail.com', icon: 'fas fa-envelope', href: 'mailto:adilalibhatti05@gmail.com', external: false },
+  { label: 'Phone', value: '0305 4365536', icon: 'fas fa-phone', href: 'tel:03054365536', external: false },
+  { label: 'Upwork', value: 'Hire me on Upwork', icon: 'fas fa-briefcase', href: 'https://www.upwork.com/freelancers/~01a835a809bc540c87?viewMode=1', external: true },
+  { label: 'GitHub', value: 'adilalivuejsdeveloper', icon: 'fab fa-github', href: 'https://github.com/adilalivuejsdeveloper', external: true },
+  { label: 'Location', value: 'Lahore, Punjab, Pakistan', icon: 'fas fa-location-dot', href: '#', external: false },
 ];
 
-const form = ref({
-  name: '',
-  email: '',
-  phone: '',
-  projectType: '',
-  budget: '',
-  message: '',
-});
+const services = [
+  'Full-Stack Web Apps (Vue.js + Laravel)',
+  'REST API development & integration',
+  'Admin dashboards & CRM platforms',
+  'DevOps: Docker, CI/CD & VPS hosting',
+  'Performance optimisation & maintenance',
+];
+
+const form = ref({ name: '', email: '', phone: '', projectType: '', budget: '', message: '' });
 
 const isSubmitting = ref(false);
 const showToast = ref(false);
@@ -279,19 +201,19 @@ const handleSubmit = async () => {
         projectType: form.value.projectType,
         budget: form.value.budget,
         message: form.value.message,
-        _replyto: form.value.email
-      })
+        _replyto: form.value.email,
+      }),
     });
 
     if (response.ok) {
-      showToastMessage('✅ Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
+      showToastMessage('✅ Message sent! I\'ll get back to you within 24 hours.', 'success');
       form.value = { name: '', email: '', phone: '', projectType: '', budget: '', message: '' };
     } else {
       throw new Error('Form submission failed');
     }
   } catch (error) {
     console.error('Error:', error);
-    showToastMessage('❌ Failed to send message. Redirecting to email client...', 'error');
+    showToastMessage('❌ Couldn\'t send. Opening your email client…', 'error');
     setTimeout(() => {
       const subject = encodeURIComponent(`New Project Inquiry - ${form.value.projectType || 'General'}`);
       const body = encodeURIComponent(`Name: ${form.value.name}\nEmail: ${form.value.email}\nPhone: ${form.value.phone}\nProject Type: ${form.value.projectType}\nBudget: ${form.value.budget}\n\nMessage:\n${form.value.message}`);
@@ -302,3 +224,29 @@ const handleSubmit = async () => {
   }
 };
 </script>
+
+<style scoped>
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.field {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-strong);
+  background: var(--ground);
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field::placeholder { color: var(--text-muted); opacity: 0.7; }
+.field:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--glow);
+}
+</style>
