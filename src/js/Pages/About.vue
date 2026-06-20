@@ -136,12 +136,6 @@ const education = [
     note: 'Studying software engineering fundamentals while working full-time as a developer.',
   },
   {
-    title: 'Intermediate — F.Sc (Pre-Medical)',
-    org: 'Aspire Group of Colleges',
-    period: 'Completed 2021',
-    note: 'Completed pre-medical before moving full-time into software development.',
-  },
-  {
     title: 'Self-directed engineering',
     org: 'Ongoing',
     period: '2021 — Present',
