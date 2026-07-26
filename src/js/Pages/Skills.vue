@@ -74,7 +74,7 @@ const categories = [
   {
     name: 'Backend',
     icon: 'fas fa-server',
-    items: ['PHP', 'Laravel', 'Livewire', 'REST APIs', 'OOP', 'MVC', 'Authentication', 'Queues & Jobs', 'Eloquent ORM'],
+    items: ['PHP', 'Laravel', 'Livewire', 'Flux UI', 'REST APIs', 'OOP', 'MVC', 'Authentication', 'Queues & Jobs', 'Eloquent ORM'],
   },
   {
     name: 'Databases',
