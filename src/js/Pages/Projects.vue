@@ -74,12 +74,22 @@
 
 <script setup>
 const facts = [
-  { value: '12', label: 'Projects' },
-  { value: '7', label: 'Live in production' },
+  { value: '13', label: 'Projects' },
+  { value: '8', label: 'Live in production' },
   { value: '5+', label: 'Industries' },
 ];
 
 const projects = [
+  {
+    id: 13,
+    title: 'Bilinnbytte.no',
+    category: 'Landing Page',
+    description: 'Norwegian car trade-in landing page with a multi-step lead form (reg.nr, details, photos), PHP email handler, and a mobile-first Bootstrap UI for collecting dealer offers.',
+    image: '/images/bilinnbytte.webp',
+    tags: ['HTML', 'CSS', 'Bootstrap', 'PHP'],
+    live: 'https://bilinnbytte.no/',
+    code: '',
+  },
   {
     id: 12,
     title: 'Pak Properties',

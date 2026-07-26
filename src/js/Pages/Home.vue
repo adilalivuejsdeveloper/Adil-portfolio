@@ -177,6 +177,13 @@ const services = [
 
 const featured = [
   {
+    title: 'Bilinnbytte.no',
+    desc: 'Norwegian car trade-in landing page — multi-step lead form, PHP email handler, and a polished mobile-responsive Bootstrap UI.',
+    image: '/images/bilinnbytte.webp',
+    stack: ['HTML', 'Bootstrap', 'PHP'],
+    live: 'https://bilinnbytte.no/',
+  },
+  {
     title: 'Pak Properties',
     desc: 'A real-estate marketplace for Pakistan — listings, advanced search, and a clean experience for buyers and sellers.',
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=640&h=400&fit=crop',
@@ -189,13 +196,6 @@ const featured = [
     image: '/images/Weqayah.webp',
     stack: ['Laravel', 'IoT', 'Real-time'],
     live: 'https://weqayah.ae/',
-  },
-  {
-    title: 'FXBotExperts',
-    desc: 'Platform for AI-powered Expert Advisors (automated trading systems) for MetaTrader 4 & 5 under Bulvert LLC.',
-    image: '/images/FxBotExperts.webp',
-    stack: ['PHP', 'Trading', 'AI/ML'],
-    live: 'https://fxbotexperts.com/',
   },
 ];
 
