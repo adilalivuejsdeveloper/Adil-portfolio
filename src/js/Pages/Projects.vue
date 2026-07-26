@@ -111,6 +111,16 @@ const projects = [
     code: '',
   },
   {
+    id: 1,
+    title: 'FXBotExperts',
+    category: 'Trading',
+    description: 'A division under Bulvert LLC offering AI-powered Expert Advisors (automated trading systems) for MetaTrader 4 and 5. Built a modern Laravel app with Livewire, Flux UI, and Alpine.js for managing bots, strategies, and client-facing trading products.',
+    image: '/images/FxBotExperts.webp',
+    tags: ['Laravel', 'Livewire', 'Flux', 'Alpine.js', 'Bootstrap', 'CSS'],
+    live: 'https://fxbotexperts.com/',
+    code: '',
+  },
+  {
     id: 2,
     title: 'Weqayah',
     category: 'IoT',
@@ -168,16 +178,6 @@ const projects = [
     image: '/images/TRAM-landing-page.png',
     tags: ['GoHighLevel', 'Tailwind CSS', 'JavaScript', 'Landing Page'],
     live: 'https://app.gohighlevel.com/v2/preview/B9s7I6NHjVhCryT2lKgw?notrack=true',
-    code: '',
-  },
-  {
-    id: 1,
-    title: 'FXBotExperts',
-    category: 'Trading',
-    description: 'A division under Bulvert LLC offering AI-powered Expert Advisors (automated trading systems) for MetaTrader 4 and 5, built around machine-learning-driven strategies.',
-    image: '/images/FxBotExperts.webp',
-    tags: ['PHP', 'Trading Systems', 'AI/ML', 'MetaTrader'],
-    live: 'https://fxbotexperts.com/',
     code: '',
   },
   {
