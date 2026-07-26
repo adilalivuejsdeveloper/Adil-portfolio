@@ -24,7 +24,7 @@
   <section class="band section">
     <div class="wrap">
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article v-for="p in projects" :key="p.id" class="card card-hover group flex flex-col overflow-hidden">
+        <article v-for="p in orderedProjects" :key="p.id" class="card card-hover group flex flex-col overflow-hidden">
           <div class="relative aspect-[16/10] overflow-hidden" style="background: var(--surface-2);">
             <img :src="p.image" :alt="p.title" loading="lazy"
                  class="size-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -73,6 +73,8 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
 const facts = [
   { value: '13', label: 'Projects' },
   { value: '8', label: 'Live in production' },
@@ -141,26 +143,6 @@ const projects = [
     code: '',
   },
   {
-    id: 11,
-    title: 'Gulf Cars4u',
-    category: 'Marketplace',
-    description: 'An online platform for buying and selling cars. I built the frontend and integrated backend functionality through APIs, with database and server-side logic.',
-    image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=640&h=400&fit=crop',
-    tags: ['Vue.js', 'Laravel', 'API Integration', 'MySQL'],
-    live: '',
-    code: '',
-  },
-  {
-    id: 8,
-    title: 'SEO-Workforce',
-    category: 'SaaS',
-    description: 'A tool for analysing website metrics. I developed the full frontend and backend, handling databases and server-side logic for the analytics dashboard.',
-    image: '/images/seo-workforce.webp',
-    tags: ['PHP', 'Laravel', 'SEO Analytics', 'MySQL'],
-    live: '',
-    code: '',
-  },
-  {
     id: 13,
     title: 'Bilinnbytte.no',
     category: 'Landing Page',
@@ -191,6 +173,26 @@ const projects = [
     code: '',
   },
   {
+    id: 8,
+    title: 'SEO-Workforce',
+    category: 'SaaS',
+    description: 'A tool for analysing website metrics. I developed the full frontend and backend, handling databases and server-side logic for the analytics dashboard.',
+    image: '/images/seo-workforce.webp',
+    tags: ['PHP', 'Laravel', 'SEO Analytics', 'MySQL'],
+    live: '',
+    code: '',
+  },
+  {
+    id: 11,
+    title: 'Gulf Cars4u',
+    category: 'Marketplace',
+    description: 'An online platform for buying and selling cars. I built the frontend and integrated backend functionality through APIs, with database and server-side logic.',
+    image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=640&h=400&fit=crop',
+    tags: ['Vue.js', 'Laravel', 'API Integration', 'MySQL'],
+    live: '',
+    code: '',
+  },
+  {
     id: 9,
     title: 'OD Talent',
     category: 'Dashboard',
@@ -211,6 +213,11 @@ const projects = [
     code: '',
   },
 ];
+
+// Live projects first; private (no live link) always at the end
+const orderedProjects = computed(() =>
+  [...projects].sort((a, b) => Number(!a.live) - Number(!b.live))
+);
 </script>
 
 <style scoped>
