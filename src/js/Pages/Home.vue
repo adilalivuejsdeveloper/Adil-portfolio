@@ -160,7 +160,7 @@
 <script setup>
 const facts = [
   { value: '2y 11m', label: 'Experience' },
-  { value: '12', label: 'Projects' },
+  { value: '13', label: 'Projects' },
   { value: 'Vue · Laravel', label: 'Core stack' },
 ];
 
@@ -177,13 +177,6 @@ const services = [
 
 const featured = [
   {
-    title: 'Bilinnbytte.no',
-    desc: 'Norwegian car trade-in landing page — multi-step lead form, PHP email handler, and a polished mobile-responsive Bootstrap UI.',
-    image: '/images/bilinnbytte.webp',
-    stack: ['HTML', 'Bootstrap', 'PHP'],
-    live: 'https://bilinnbytte.no/',
-  },
-  {
     title: 'Pak Properties',
     desc: 'A real-estate marketplace for Pakistan — listings, advanced search, and a clean experience for buyers and sellers.',
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=640&h=400&fit=crop',
@@ -191,11 +184,18 @@ const featured = [
     live: 'https://pakproperties.pk/',
   },
   {
-    title: 'Weqayah',
-    desc: 'Government-mandated fire-monitoring platform connecting alarm systems to a 24/7 smart monitoring centre in Ajman.',
-    image: '/images/Weqayah.webp',
-    stack: ['Laravel', 'IoT', 'Real-time'],
-    live: 'https://weqayah.ae/',
+    title: 'MedexCore',
+    desc: 'Healthcare management platform for patient data, appointments, and medical records — secure and efficient for clinics.',
+    image: '/images/MEDEXCORE.webp',
+    stack: ['Laravel', 'Livewire', 'Tailwind'],
+    live: 'https://medexcore.com/',
+  },
+  {
+    title: 'Pakistan Cooling Center',
+    desc: 'E-commerce platform for air-conditioning and cooling solutions — browse, compare, and purchase with a smooth UX.',
+    image: '/images/pakistancooling.webp',
+    stack: ['Vue.js', 'Laravel', 'E-commerce'],
+    live: 'https://pakistancooling.com/',
   },
 ];
 
